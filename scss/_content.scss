@@ -1,0 +1,28 @@
+.main {
+  background-color: var(--bg-main);
+  min-height: 1000px;
+  padding: 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.main__card {
+  @include box;
+  background-color: yellow;
+  padding: 10px;
+
+  transition: transform 0.5s ease-in;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &--text {
+    text-align: center;
+    color: #be7d1c;
+  }
+}
