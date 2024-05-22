@@ -18,3 +18,15 @@
     color: black;
   }
 }
+
+@if $mode == "dark" {
+  body {
+    background-color: #333;
+    color: #fff;
+  }
+} @else {
+  body {
+    background-color: #fff;
+    color: #333;
+  }
+}
